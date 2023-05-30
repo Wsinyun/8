@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  color: initial;
+  text-decoration: initial;
+}
+
+.box {
+  width: 900px;
+  height: 665px;
+  background-color: #D0EFB1;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+  transform: translate(-5px, -5px);
+}
+
+
+.top {
+  background-color: #B3D89C;
+  background-size: cover;
+  width: 350px;
+  height: 665px;
+  position: relative;
+  transition: 0.5s;
+  float: left;
+  margin-left: 20px;
+}
+
+.top .tag {
+  width: 300px;
+  height: 200px;
+  background-image: url(./3.JPG);
+  float: left;
+  margin-left: 20px;
+  background-size: cover;
+  position: relative;
+}
+
+.top .tag-2 {
+  width: 300px;
+  height: 200px;
+  background-image: url(./2.jpg);
+  float: left;
+  margin-left: 20px;
+  background-size: cover;
+  position: relative;
+}
+
+.top .tag-3 {
+  width: 300px;
+  height: 200px;
+  background-image: url(./6.jpg);
+  float: left;
+  margin-left: 20px;
+  background-size: cover;
+  position: relative;
+}
+
+
+.top-2 {
+  background-color:#D0EFB1;
+  background-size: cover;
+  width: 450px;
+  height: 250px;
+  position: relative;
+  transition: 0.5s;
+  float:right ;
+  margin-right: 20px;
+}
+
+.top-3 {
+  background-color:#B3D89C;
+  background-size: cover;
+  width: 350px;
+  height:400px;
+  position: relative;
+  transition: 0.5s;
+  float:right ;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.top-3 h1 {
+  font-size: 30px;
+}
+
+
+.bottom {
+  padding: 10px 20px 20px 20px;
+}
+
+.bottom li {
+  padding: 5px 0px;
+}
+
+.bottom h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.bottom ul {
+  list-style: none;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+}
+
+.btnWebsite {
+  background-color: #ff7526;
+  color: white;
+  transition: 0.5s;
+}
+
+.btnWebsite:hover {
+  background-color: #ff7526;
+}
+
+.btnNews {
+  border: solid 1px black;
+  float: right;
+}
+
+.btnNews:hover {
+  background-color: #eee;
+}
+
+
+.swiper {
+  width: 380px;
+  height: 580px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7526;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper button {
+  width: 50px;
+  height: 50px;
+  color: #f80404;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: opacity 0.25s;
+}
+
+.swiper button:hover {
+  opacity: 0.8;
+}
+
+.swiper button::before, .swiper button::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  padding: 50px 25px 25px;
+  color: #fff;
+}
+
+.swiper-description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.swiper-description h2 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.swiper-description p {
+  font-size: 14px;
+  max-width: 50%;
+  margin-bottom: 15px;
+}
+
+.hover {position:relative;}
+
+
+.hover img {
+  position:absolute;
+  /* CSS3淡出淡入效果,1秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin-left: 20px;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.hover img:nth-of-type(2):hover{
+  opacity:0; /*滑鼠滑入時，透明度變0*/
+}
